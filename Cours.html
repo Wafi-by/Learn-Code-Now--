@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Cours - Learn Code Now</title>
+    <link rel="stylesheet" href="Cours.css">
+</head>
+<body>
+    <!-- Barre de chargement -->
+    <div id="loading-bar"></div>
+
+    <header>
+        <img id="logo" src="Learn.PNG" alt="Logo de Learn Code Now">
+        <h1>Learn Code Now</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="offre.html">Ce Que Nous Offrons</a></li>
+                <li><a href="Pourquoi.html">Pourquoi Choisir Learn Code Now</a></li>
+                <li><a href="Inscriptions.html">Inscrivez-Vous</a></li>
+                <li><a href="Contact.html">Contactez-Nous</a></li>
+                <li><a href="Cours.html">Nos Cours</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Nos Cours</h2>
+        <p>Découvrez nos cours de programmation pour tous les niveaux, incluant Python, HTML, CSS, Java et JavaScript.</p>
+    </section>
+
+    <section class="course-section">
+        <div class="course">
+            <h3>Python</h3>
+            <p>Découvrez nos cours Python adaptés à tous les niveaux.</p>
+            <a href="Python.html" class="cta-button">En savoir plus</a>
+        </div>
+
+        <div class="course">
+            <h3>HTML</h3>
+            <p>Apprenez les bases et les concepts avancés de HTML.</p>
+            <a href="cours_html.html" class="cta-button">En savoir plus</a>
+        </div>
+
+        <div class="course">
+            <h3>CSS</h3>
+            <p>Maîtrisez le style et la mise en page de vos sites web avec CSS.</p>
+            <a href="cours_css.html" class="cta-button">En savoir plus</a>
+        </div>
+
+        <div class="course">
+            <h3>Java</h3>
+            <p>Progressez dans la programmation avec nos cours Java.</p>
+            <a href="cours_java.html" class="cta-button">En savoir plus</a>
+        </div>
+
+        <div class="course">
+            <h3>JavaScript</h3>
+            <p>Développez des applications dynamiques avec JavaScript.</p>
+            <a href="cours_javascript.html" class="cta-button">En savoir plus</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Créé par Learn Code Now.</p>
+    </footer>
+
+    <!-- Script pour la barre de chargement -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loadingBar = document.getElementById("loading-bar");
+            loadingBar.style.display = "block";
+            loadingBar.style.width = "100%";
+            setTimeout(() => {
+                loadingBar.style.display = "none";
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

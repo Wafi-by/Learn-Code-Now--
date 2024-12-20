@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Python pour Amateurs - Learn Code Now</title>
+    <link rel="stylesheet" href="amateurpython.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="Learn.PNG" alt="Logo de Learn Code Now">
+        </a>
+        <h1>Learn Code Now</h1>
+        <nav>
+            <ul>
+                <li id="current"><a href="index.html">Accueil</a></li>
+                <li><a href="Cours.html">Nos Cours</a></li>
+                <li><a href="amateurpython.html">Amateur</a></li>
+                <li><a href="intermediairepython.html">Intermédiaire</a></li>
+                <li><a href="avancepython.html">Avancé</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ajout de la barre de recherche -->
+    <div id="search-bar">
+        <form id="search-form" action="#" method="get">
+            <input type="text" id="search-box" name="search" placeholder="Rechercher...">
+            <button type="submit" id="search-button">Rechercher</button>
+        </form>
+    </div>
+
+    <section id="cours-amateurs">
+      <h1>Cours Python pour Amateurs</h1>
+      <p><strong>Bienvenue dans notre cours Python pour débutants. Dans ce cours, vous apprendrez les bases de la programmation Python, un langage convivial et puissant. Que vous soyez totalement novice en programmation ou que vous souhaitiez renforcer vos compétences, ce cours est conçu pour vous.</strong></p>
+
+      <h2>Contenu du Cours</h2>
+      <p>Ce cours est divisé en plusieurs sections, chacune couvrant un aspect clé de la programmation Python. Voici un aperçu du contenu :</p>
+
+      <h3>Section 1 : Introduction à Python</h3>
+      <p>Dans cette section, vous découvrirez ce qu'est Python, son histoire et ses utilisations courantes. Nous vous montrerons comment installer Python sur votre ordinateur et comment écrire et exécuter votre premier programme Python.</p>
+      <pre><code>
+# Votre premier programme Python
+print("Bonjour, Python!")
+    </code></pre>
+
+      <h3>Section 2 : Variables et Opérations de Base</h3>
+      <p>Dans cette section, nous aborderons la création de variables pour stocker des données, ainsi que les opérations de base sur les nombres et les chaînes de caractères.</p>
+      <pre><code>
+# Déclaration de variables
+nom = "Alice"
+age = 25
+
+# Opérations de base
+total = 10 + 5
+message = "Bonjour, " + nom
+    </code></pre>
+
+      <h3>Section 3 : Structures de Contrôle</h3>
+      <p>Vous apprendrez comment prendre des décisions en utilisant des déclarations conditionnelles (if) et comment répéter des actions avec des boucles (for et while). Ces concepts sont essentiels pour contrôler le flux de votre programme.</p>
+      <pre><code>
+# Déclaration conditionnelle
+if age >= 18:
+    print("Vous êtes majeur.")
+else:
+    print("Vous êtes mineur.")
+
+# Boucle for
+for i in range(5):
+    print(i)
+    </code></pre>
+
+      <h3>Section 4 : Fonctions</h3>
+      <p>Vous découvrirez comment créer et utiliser des fonctions en Python. Les fonctions vous permettent de réutiliser du code et de structurer votre programme de manière modulaire.</p>
+      <pre><code>
+# Définition d'une fonction
+def saluer(nom):
+    return "Bonjour, " + nom
+
+# Appel de la fonction
+message = saluer("Bob")
+print(message)
+    </code></pre>
+
+      <h3>Section 5 : Exemples Pratiques</h3>
+      <p>Dans cette section, vous travaillerez sur des exemples pratiques pour appliquer vos connaissances. Vous résoudrez des problèmes et écrirez des scripts Python pour accomplir des tâches spécifiques.</p>
+
+      <!-- Section 6 -->
+      <h3>Section 6 : Listes et Boucles</h3>
+      <p>Vous apprendrez à travailler avec des listes en Python et comment utiliser des boucles pour parcourir ces listes.</p>
+      <pre><code>
+# Création d'une liste
+nombres = [1, 2, 3, 4, 5]
+
+# Boucle pour parcourir la liste
+for nombre in nombres:
+    print(nombre)
+    </code></pre>
+
+      <!-- Section 7 -->
+      <h3>Section 7 : Dictionnaires</h3>
+      <p>Dans cette section, nous explorerons l'utilisation des dictionnaires en Python pour stocker des paires clé-valeur.</p>
+      <pre><code>
+# Création d'un dictionnaire
+personne = {'nom': 'Alice', 'âge': 30, 'ville': 'Paris'}
+
+# Accès aux valeurs du dictionnaire
+print(personne['nom'])
+    </code></pre>
+
+      <!-- Section 8 -->
+      <h3>Section 8 : Manipulation de Chaînes de Caractères</h3>
+      <p>Vous découvrirez comment manipuler et formater des chaînes de caractères en Python.</p>
+      <pre><code>
+# Concaténation de chaînes
+nom = "Alice"
+message = "Bonjour, " + nom
+
+# Formatage de chaînes
+âge = 25
+message = "Elle a {} ans.".format(âge)
+    </code></pre>
+<!-- Section 6 -->
+<h3>Section 6 : Opérateurs Logiques</h3>
+<p>Dans cette section, vous découvrirez les opérateurs logiques en Python, tels que ET (and), OU (or) et NON (not).</p>
+<pre><code>
+# Opérateurs logiques
+a = True
+b = False
+
+resultat_et = a and b
+resultat_ou = a or b
+resultat_non = not a
+</code></pre>
+
+<!-- Section 7 -->
+<h3>Section 7 : Fonctions Avancées</h3>
+<p>Dans cette section, nous explorerons les fonctions avancées en Python, telles que les fonctions récursives et les fonctions anonymes (lambda).</p>
+<pre><code>
+# Fonction récursive
+def factorielle(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorielle(n - 1)
+
+# Fonction lambda
+carre = lambda x: x ** 2
+</code></pre>
+
+<!-- Section 8 -->
+<h3>Section 8 : Gestion des Erreurs</h3>
+<p>Vous apprendrez à gérer les erreurs et les exceptions en Python pour rendre votre code plus robuste.</p>
+<pre><code>
+# Gestion des erreurs
+try:
+    resultat = 10 / 0
+except ZeroDivisionError:
+    print("Division par zéro !")
+</code></pre>
+
+<!-- Ajoutez d'autres sections supplémentaires ici (jusqu'à la section 20) -->
+
+<!-- Section 9 -->
+<h3>Section 9 : Modules Python</h3>
+<p>Dans cette section, nous explorerons comment utiliser des modules Python pour étendre les fonctionnalités de base de Python.</p>
+<pre><code>
+# Utilisation de modules
+import math
+racine_carree = math.sqrt(25)
+</code></pre>
+
+<!-- Section 10 -->
+<h3>Section 10 : Manipulation de Fichiers</h3>
+<p>Vous apprendrez comment lire et écrire des fichiers en Python pour manipuler des données externes.</p>
+<pre><code>
+# Lecture et écriture de fichiers
+fichier = open("mon_fichier.txt", "r")
+contenu = fichier.read()
+fichier.close()
+</code></pre>
+
+<!-- Section 11 -->
+<h3>Section 11 : Traitement des Données JSON</h3>
+<p>Dans cette section, nous explorerons comment lire et écrire des données au format JSON en Python.</p>
+<pre><code>
+# Traitement de données JSON
+import json
+
+# Convertir un dictionnaire en JSON
+data = {"nom": "Alice", "âge": 30}
+json_data = json.dumps(data)
+
+# Charger des données JSON
+loaded_data = json.loads(json_data)
+</code></pre>
+
+<!-- Section 12 -->
+<h3>Section 12 : Interface Utilisateur avec Tkinter</h3>
+<p>Vous découvrirez comment créer des interfaces utilisateur graphiques (GUI) en Python en utilisant la bibliothèque Tkinter.</p>
+<pre><code>
+# Interface utilisateur avec Tkinter
+import tkinter as tk
+
+racine = tk.Tk()
+label = tk.Label(racine, text="Bonjour, Tkinter!")
+label.pack()
+racine.mainloop()
+</code></pre>
+
+<!-- Section 13 -->
+<h3>Section 13 : Accéder à des Bases de Données</h3>
+<p>Dans cette section, vous apprendrez comment accéder à des bases de données SQL en Python avec SQLite.</p>
+<pre><code>
+# Accéder à des bases de données
+import sqlite3
+
+# Connexion à une base de données
+connexion = sqlite3.connect("ma_base.db")
+cursor = connexion.cursor()
+
+# Exécuter des requêtes SQL
+cursor.execute("SELECT * FROM utilisateurs")
+resultats = cursor.fetchall()
+
+# Fermer la connexion
+connexion.close()
+</code></pre>
+
+<!-- Section 14 -->
+<h3>Section 14 : Programmation Orientée Objet</h3>
+<p>Vous découvrirez les concepts de la programmation orientée objet (POO) en Python et comment créer des classes et des objets.</p>
+<pre><code>
+# Programmation orientée objet
+class Personne:
+    def __init__(self, nom, âge):
+        self.nom = nom
+        self.âge = âge
+
+    def présenter(self):
+        print(f"Je m'appelle {self.nom} et j'ai {self.âge} ans.")
+
+# Créer un objet
+alice = Personne("Alice", 30)
+alice.présenter()
+</code></pre>
+
+<!-- Section 15 -->
+<h3>Section 15 : Création de Sites Web</h3>
+<p>Dans cette section, nous explorerons comment créer des sites web dynamiques avec Python en utilisant des frameworks web tels que Flask.</p>
+<pre><code>
+# Création de sites web avec Flask
+from flask import Flask
+
+app = Flask(__name)
+
+@app.route('/')
+def accueil():
+    return 'Bienvenue sur mon site web !'
+
+if __name__ == '__main__':
+    app.run()
+</code></pre>
+
+<!-- Section 16 -->
+<h3>Section 16 : Traitement de Données avec Pandas</h3>
+<p>Vous apprendrez à manipuler et analyser des données tabulaires en utilisant la bibliothèque Pandas.</p>
+<pre><code>
+# Traitement de données avec Pandas
+import pandas as pd
+
+# Charger des données depuis un fichier CSV
+data = pd.read_csv('donnees.csv')
+
+# Effectuer des opérations sur les données
+moyenne = data['valeur'].mean()
+</code></pre>
+
+<!-- Section 17 -->
+<h3>Section 17 : Création de Graphiques avec Matplotlib</h3>
+<p>Dans cette section, nous explorerons comment créer des graphiques et des visualisations de données en utilisant Matplotlib.</p>
+<pre><code>
+# Création de graphiques avec Matplotlib
+import matplotlib.pyplot as plt
+
+# Créer un graphique à barres
+valeurs = [10, 20, 15, 30]
+plt.bar(['A', 'B', 'C', 'D'], valeurs)
+plt.xlabel('Catégories')
+plt.ylabel('Valeurs')
+plt.title('Exemple de graphique à barres')
+plt.show()
+</code></pre>
+
+<!-- Section 18 -->
+<h3>Section 18 : Traitement de l'Image avec Pillow</h3>
+<p>Vous apprendrez à manipuler des images en Python en utilisant la bibliothèque Pillow (PIL).</p>
+<pre><code>
+# Traitement de l'image avec Pillow
+from PIL import Image
+
+# Ouvrir une image
+image = Image.open('mon_image.jpg')
+
+# Effectuer des opérations sur l'image
+image_redimensionnée = image.resize((200, 200))
+image_redimensionnée.save('nouvelle_image.jpg')
+</code></pre>
+
+<!-- Section 19 -->
+<h3>Section 19 : Apprentissage Automatique avec Scikit-Learn</h3>
+<p>Dans cette section, vous découvrirez comment créer des modèles d'apprentissage automatique en utilisant Scikit-Learn.</p>
+<pre><code>
+# Apprentissage automatique avec Scikit-Learn
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+
+# Charger un jeu de données
+iris = load_iris()
+X, y = iris.data, iris.target
+
+# Diviser les données en ensembles d'entraînement et de test
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Créer un modèle de forêt aléatoire
+modèle = RandomForestClassifier(n_estimators=100)
+modèle.fit(X_train, y_train)
+précision = modèle.score(X_test, y_test)
+</code></pre>
+
+<!-- Section 20 -->
+<h3>Section 20 : Déploiement d'Applications Python</h3>
+<p>Dans cette section, vous apprendrez à déployer vos applications Python pour qu'elles soient accessibles à d'autres utilisateurs.</p>
+<pre><code>
+# Déploiement d'applications Python
+# Vous explorerez diverses méthodes de déploiement, y compris le déploiement sur des serveurs, l'emballage d'applications, etc.
+</code></pre>
+
+      <h2>Avantages de ce Cours</h2>
+      <ul>
+        <li>Apprentissage progressif pour les débutants complets.</li>
+        <li>Exemples pratiques pour renforcer vos compétences.</li>
+        <li>Ouvrez des opportunités de carrière

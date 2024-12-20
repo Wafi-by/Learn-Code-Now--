@@ -1,0 +1,163 @@
+/* Général */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.85), rgba(231, 76, 60, 0.85)), 
+              url('pexels-henry-&-co-1939485.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  line-height: 1.6;
+}
+
+/* Animation de fond (Zoom Progressif) */
+@keyframes zoomBackground {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
+
+/* Animation générale des sections */
+header, section, footer {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInZoom 1.5s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Logo */
+#logo-section {
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 100px;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+/* Barre de recherche */
+#search-bar {
+  position: absolute;
+  top: 10px;
+  left: 140px;
+}
+
+#search-form {
+  display: flex;
+}
+
+#search-box {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#search-button:hover {
+  background-color: #007bb5;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #3498db;
+  transition: background-color 0.3s ease-in-out, transform 0.5s;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #007bb5;
+  transform: scale(1.1);
+}
+
+/* Bouton de connexion */
+#login-section {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+#login-button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+#login-button:hover {
+  background-color: #c0392b;
+}
+
+/* Section principale */
+section {
+  margin: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}

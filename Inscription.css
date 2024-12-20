@@ -1,0 +1,168 @@
+/* Styles globaux */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.85), rgba(231, 76, 60, 0.85)), 
+              url('pexels-henry-&-co-1939485.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  line-height: 1.6;
+  overflow-x: hidden; /* Éviter le défilement horizontal */
+}
+
+/* Barre de chargement */
+#loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #3498db;
+  animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Style pour le logo */
+#logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: auto;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Style pour la section d'inscription */
+#inscription-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);  /* Changed to make it blend with the page background */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Form styling */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Input styling */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  animation: fadeIn 1s ease-out;
+}
+
+button:hover {
+  background-color: #007bb5;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Navigation styling */
+nav {
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #3498db;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #007bb5;
+}
+
+/* Animation Fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  animation: fadeIn 1s ease-out;
+}

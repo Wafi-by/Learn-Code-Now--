@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Learn Code Now</title>
+    <link rel="stylesheet" href="Inscription.css">
+  </head>
+  <body>
+    <!-- Barre de chargement -->
+    <div id="loading-bar"></div>
+
+    <header>
+      <!-- Logo de Learn Code Now -->
+      <img id="logo" src="Learn.PNG" alt="Logo de Learn Code Now">
+      <h1>Learn Code Now</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="offre.html">Ce Que Nous Offrons</a></li>
+          <li><a href="Pourquoi.html">Pourquoi Choisir Learn Code Now</a></li>
+          <li><a href="Inscriptions.html">Inscrivez-Vous</a></li>
+          <li><a href="Contact.html">Contactez-Nous</a></li>
+          <li><a href="Cours.html">Nos Cours</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inscription-section">
+      <h2>Inscription</h2>
+      <form>
+        <div>
+          <label for="nom">Nom complet :</label>
+          <input type="text" id="nom" name="nom" required>
+
+          <label for="email">Adresse E-mail :</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="motdepasse">Mot de passe :</label>
+          <input type="password" id="motdepasse" name="motdepasse" required>
+
+          <label for="confirmationmotdepasse">Confirmer le mot de passe :</label>
+          <input type="password" id="confirmationmotdepasse" name="confirmationmotdepasse" required>
+        </div>
+
+        <div>
+          <label for="datedenaissance">Date de naissance :</label>
+          <input type="date" id="datedenaissance" name="datedenaissance" required>
+
+          <label for="pays">Pays/région :</label>
+          <input type="text" id="pays" name="pays" required>
+
+          <label for="langue">Langue préférée :</label>
+          <select id="langue" name="langue">
+            <option value="francais">Français</option>
+            <option value="anglais">Anglais</option>
+            <option value="arabe">Arabe</option>
+          </select>
+
+          <label for="niveau">Niveau de compétence en programmation :</label>
+          <select id="niveau" name="niveau">
+            <option value="debutant">Débutant</option>
+            <option value="intermediaire">Intermédiaire</option>
+            <option value="avance">Avancé</option>
+          </select>
+
+          <label for="objectifs">Objectifs d'apprentissage :</label>
+          <input type="text" id="objectifs" name="objectifs" required>
+
+          <label for="interets">Intérêts spécifiques en programmation :</label>
+          <input type="text" id="interets" name="interets" required>
+
+          <input type="checkbox" id="newsletter" name="newsletter" value="accepte">
+          <label for="newsletter">Je souhaite m'inscrire à la newsletter.</label>
+
+          <input type="checkbox" id="conditions" name="conditions" required>
+          <label for="conditions">J'accepte les <a href="conditions.html" target="_blank">conditions d'utilisation</a> et la <a href="confidentialite.html" target="_blank">politique de confidentialité</a>.</label>
+
+          <button type="submit">S'inscrire</button>
+          <button type="reset">Réinitialiser</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Created by Learn Code Now.</p>
+    </footer>
+  </body>
+</html>
