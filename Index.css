@@ -189,7 +189,7 @@ footer {
   display: none;
   transition: width 2s ease-in-out;
 }
-/* Barre de chargement */
+
 #loading-bar {
   position: fixed;
   top: 0;
